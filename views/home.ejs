@@ -1,0 +1,16 @@
+<%- include("header") %>
+<%for(var i=0;i<data.length;i++){%>
+  <h1><%=data[i].title%></h1>
+  <p><%=data[i].content%></p>
+  <form class="" action="/edit" method="post">
+
+  <button type="" name="button" value="<%=data[i].title%>">Edit</button>
+
+    </form>
+  <form class="" action="delete" method="post">
+    <button type="" name="button" value="<%=data[i].title%>">Delete</button>
+
+  </form>
+
+<%}%>
+<%- include("footer") %>
